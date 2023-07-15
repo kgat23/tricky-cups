@@ -1,0 +1,54 @@
+body{
+    background-color: rgb(195, 13, 13);
+}
+
+#cup1 {
+    position: absolute;
+    left: 400px;
+    top: 250px;
+    height: 100px;
+    width: 90px;
+    transition: top 1s, left 1s;
+    z-index: 1; /* Set higher z-index for the cup */
+}
+
+#cup2 {
+    position: absolute;
+    left: 600px;
+    top: 250px;
+    height: 100px;
+    width: 90px;
+    transition: top 1s, left 1s;
+    z-index: 1; /* Set higher z-index for the cup */
+}
+
+#cup3 {
+    position: absolute;
+    left: 800px;
+    top: 250px;
+    height: 100px;
+    width: 90px;
+    transition: top 1s, left 1s;
+    z-index: 1; /* Set higher z-index for the cup */
+}
+
+#ball {
+    position: absolute;
+    left: 420px;
+    top: 350px;
+    height: 50px;
+    width: 50px;
+    z-index: 0; /* Set lower z-index for the ball */
+}
+
+
+
+
+
+
+
+
+
+
+
+
