@@ -54,7 +54,7 @@ function rotateCups(){
       moveCup(shuffledDetails[2],800);
       let x = getPosition(shuffledDetails);
       ball.style.left = (422 + x*200)+'px';
-    },2000+i*1000);
+    },2000+i*(1000-100*level));
   }
   
   
