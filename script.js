@@ -2,6 +2,7 @@ var cup1 = document.getElementById('cup1');
 var cup2 = document.getElementById('cup2');
 var cup3 = document.getElementById('cup3');
 var ball = document.getElementById('ball');
+var startButton = document.getElementById('startButton');
 const detailsOfCups = [cup1,cup2,cup3];
 let level = 1;
 
@@ -49,11 +50,11 @@ function rotateCups(){
       setTimeout(function(){
       const shuffledDetails = shuffleArray(detailsOfCups);
     // console.log(shuffledDetails);
-      moveCup(shuffledDetails[0],400);
-      moveCup(shuffledDetails[1],600);
-      moveCup(shuffledDetails[2],800);
+      moveCup(shuffledDetails[0],270);
+      moveCup(shuffledDetails[1],570);
+      moveCup(shuffledDetails[2],870);
       let x = getPosition(shuffledDetails);
-      ball.style.left = (422 + x*200)+'px';
+      ball.style.left = (315 + x*300)+'px';
     },2000+i*(1000-100*level));
   }
   
@@ -86,6 +87,7 @@ function handleCupClick() {
 }
 
 function playGame(){
+  startButton.style.display = 'none';
   setTimeout(function(){
     for(let i=0;i<3;i++){
       detailsOfCups[i].style.opacity = 0.5;

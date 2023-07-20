@@ -1,46 +1,62 @@
 body{
-  background-color: rgb(195, 13, 13);
+  background-image: url('background.png');
+  background-repeat: no-repeat;
+  background-position: 50% 20%;
+  background-color: rgb(53, 45, 45);
+  /* margin-left: 50px; */
 }
 
 #cup1,#cup2,#cup3{
   opacity: 1;
+  height: 200px;
+  width: 180px;
+  transition: top 1s, left 1s;
+  z-index: 1;
+  position: absolute;
 }
 
 #cup1 {
-  position: absolute;
-  left: 400px;
-  top: 250px;
-  height: 100px;
-  width: 90px;
-  transition: top 1s, left 1s;
-  z-index: 1; /* Set higher z-index for the cup */
+  left: 270px;
+  top: 396px;
+   /* Set higher z-index for the cup */
 }
 
 #cup2 {
-  position: absolute;
-  left: 600px;
-  top: 250px;
-  height: 100px;
-  width: 90px;
-  transition: top 1s, left 1s;
-  z-index: 1; /* Set higher z-index for the cup */
+  left: 570px;
+  top: 396px;
 }
 
 #cup3 {
-  position: absolute;
-  left: 800px;
-  top: 250px;
-  height: 100px;
-  width: 90px;
-  transition: top 1s, left 1s;
-  z-index: 1; /* Set higher z-index for the cup */
+  left: 870px;
+  top: 396px;
 }
 
 #ball {
   position: absolute;
-  left: 422px;
-  top: 286px;
-  height: 50px;
-  width: 50px;
+  left: 315px;
+  top: 460px;
+  height: 100px;
+  width: 100px;
   z-index: 0; /* Set lower z-index for the ball */
 }
+
+#startButton{
+  margin-left: 600px;
+  background-color: black;
+  color: white;
+  width: 120px;
+  height: 60px;
+  transition: 0.5s;
+  margin-top: 100px;
+  font-size: 2rem;
+  border-radius: 10px;
+  border: none;
+}
+
+#startButton:hover{
+  background-color: rgba(0, 0, 0, 0.45);
+}
+
+
+
+
