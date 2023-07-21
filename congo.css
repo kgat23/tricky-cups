@@ -17,7 +17,7 @@ body {
     position: absolute;
     width: 764px;
     height: 119px;
-    left: 400px;
+    left: 500px;
     top: 50px;
 
     font-family: 'Inter';
@@ -25,8 +25,6 @@ body {
     font-weight: 400;
     font-size: 96px;
     line-height: 116px;
-
-    color: #FF00F5;
 
 }
 
@@ -64,8 +62,9 @@ body {
     bottom: 4%;
     right: 2%;
 
-    background: #C69EF8;
-    border-radius: 36px;
+    background-color: #000000;
+    color: white;
+    /* border-radius: 36px; */
 }
 
 #restart {
@@ -73,17 +72,17 @@ body {
     width: 207px;
     height: 69px;
     left: 50%;
-    top: 50%;
+    top: 55%;
     margin-left: -100px;
 
-    /* font-family: 'Inter';
+    /* font-family: 'Inter'; */
     font-style: normal;
     font-weight: 400;
     font-size: 40px;
-    line-height: 77px; */
+    line-height: 77px;
 
-    color: #000000;
-
+    color: white;
+    transition: 0.5s;
 }
 
 /* #scores{
@@ -97,10 +96,15 @@ body {
     width: 207px;
     height: 69px;
     left: 50%;
-    top: 65%;
+    top: 70%;
     margin-left: -100px;
 
-    color: #000000;
+    color: white;
+    transition: 0.5s;
+}
+
+#restart:hover,#exit:hover{
+    background-color: rgba(0, 0, 0, 0.45);
 }
 
 .text {

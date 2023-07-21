@@ -3,6 +3,9 @@ var cup2 = document.getElementById('cup2');
 var cup3 = document.getElementById('cup3');
 var ball = document.getElementById('ball');
 var startButton = document.getElementById('startButton');
+var levelDisplay = document.getElementById('level-display');
+var nextLevelDisplay = document.getElementsByClassName('next-level');
+var nextButton = document.getElementById('next');
 const detailsOfCups = [cup1,cup2,cup3];
 let level = 1;
 
@@ -71,26 +74,31 @@ function rotateCups(){
 //   playGame();
 // }
 
+function nextLevel(){
+  playGame();
+}
+
 function handleCupClick() {
   if (this === cup1) {
-    alert('Congratulations! You found the ball!');
+    nextLevelDisplay[0].style.display = 'block';
+    levelDisplay.textContent = '';
     level++;
     // playNextLevel(level);
-    if(level === 6){
-      alert('Congratulations, you have completed the game. Click ok and then press start to start playing again.');
-      location.reload();
+    if(level === 2){
+      window.location.href = 'congo.html';
     }
-    playGame();
   } else {
-    alert('Sorry! Try again.');
+      window.location.href = 'gameover.html';
   }
 }
 
 function playGame(){
   startButton.style.display = 'none';
+  nextLevelDisplay[0].style.display = 'none';
+  levelDisplay.textContent = 'Level: '+level;
   setTimeout(function(){
     for(let i=0;i<3;i++){
-      detailsOfCups[i].style.opacity = 0.5;
+      detailsOfCups[i].style.opacity = 0.4;
       ball.style.display = 'block';
     }
   },500);

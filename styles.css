@@ -13,28 +13,26 @@ body{
   transition: top 1s, left 1s;
   z-index: 1;
   position: absolute;
+  top: 410px;
 }
 
 #cup1 {
   left: 270px;
-  top: 396px;
    /* Set higher z-index for the cup */
 }
 
 #cup2 {
   left: 570px;
-  top: 396px;
 }
 
 #cup3 {
   left: 870px;
-  top: 396px;
 }
 
 #ball {
   position: absolute;
   left: 315px;
-  top: 460px;
+  top: 472px;
   height: 100px;
   width: 100px;
   z-index: 0; /* Set lower z-index for the ball */
@@ -47,16 +45,70 @@ body{
   width: 120px;
   height: 60px;
   transition: 0.5s;
-  margin-top: 100px;
+  margin-top: 10px;
   font-size: 2rem;
   border-radius: 10px;
   border: none;
+}
+
+#menu{
+  display: block;
+  background-color: black;
+  color: white;
+  width: 120px;
+  height: 60px;
+  transition: 0.5s;
+  font-size: 2rem;
+  border-radius: 10px;
+  border: none;
+  margin-left: 100px;
+  margin-top: 30px;
 }
 
 #startButton:hover{
   background-color: rgba(0, 0, 0, 0.45);
 }
 
+a{
+  text-decoration: none;
+  color: white;
+  cursor: default;
+}
 
+#menu:hover{
+  background-color: rgba(0, 0, 0, 0.45);
+}
 
+#level-display{
+  font-size: 4rem;
+  margin-left: 40%;
+}
+
+.next-level{
+  display: none;
+  margin-left: 20%;
+  font-size: 1.7rem;
+}
+
+#next{
+  margin-left: 300px;
+  font-size: 2rem;
+  width: 10rem;
+  height: 5rem;
+  background-color: rgba(0, 0, 0);
+  color: white;
+  transition: 0.5s;
+}
+
+#next:hover{
+  background-color: rgba(0, 0, 0, 0.45);
+}
+
+#congrats-2{
+  margin-left: 150px;
+}
+
+#congrats-1{
+  margin-left: 200px;
+}
 

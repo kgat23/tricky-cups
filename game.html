@@ -11,7 +11,15 @@
         <img src="inverted-white-paper-cup-removebg-preview.png" id="cup3">
     </div>
     <img src="ball_photo-removebg-preview.png" id="ball">
-    <button id="startButton" onclick="playGame()">Start</button>
+    <button id="menu"><a href="menu.html">MENU</a></button>
+    <button id="startButton" onclick="playGame()">START</button>
+    <h3 id="level-display"></h3>
+    <div class="next-level">
+        <h2 id="congrats-1">Congratulations!!!</h2>
+        <h2 id="congrats-2">You have found the ball</h2>
+        <button id="next" onclick="nextLevel()">Next Level</button>
+    </div>
+    
 
     <script src="script.js"></script>
 </body>
